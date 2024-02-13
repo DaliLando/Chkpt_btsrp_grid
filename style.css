@@ -1,0 +1,183 @@
+
+
+.header {
+  border-left: 30px solid black;
+
+}
+
+#navbarNavAltMarkup{
+   display: flex;
+   justify-content: flex-end;
+}
+.hero-image {
+
+    margin-top:0;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("Beef-Wellington.png");
+    height: 50%;
+    width: 100%;
+  
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    /* This is the parent*/
+  }
+  
+  /* Place text in the middle of the image */
+  .hero-text {
+    text-align: center;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    /*this is the child*/
+  }
+  .hero-text > button{
+    background-color: transparent;
+    border: 2px solid white;
+    border-radius:15px ;
+    padding: 15px 32px;
+    
+    
+  }
+  button a { 
+    color: white;
+    text-decoration: none;
+    font-size: large;
+
+  }
+  button:hover {
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+  }
+  .box1 {
+    margin-top: 350px;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: 100px 400px;
+  }
+ 
+  #carte1 {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 2;
+    justify-self: center;
+  }
+  #carte2 {
+    justify-self: center;
+
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 2;
+
+  }
+  #carte3 {
+    justify-self: center;
+
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 2;
+
+  }
+  #title1 {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    text-align: center;
+  }
+  .box2 {
+    margin-top: 100px;
+    display: grid;
+    grid-template-columns: 50% 50% ;
+    grid-template-rows: 100px 400px;
+  }
+  #title2 {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    text-align: center;
+  }
+  .tof{
+    justify-self: center;
+    border: 1px solid black;
+  }
+  .desc {
+    display: flex;
+    align-items: center;
+    align-content: center;
+    padding: 50px;
+    border-left: 2px solid black;
+    text-align: center;
+  }
+  
+  .parent {
+    display: flex;
+    justify-content: center;
+  }
+  .contact {
+    border-top:1px  solid black;
+    border-bottom: 1px solid black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 100px;
+    padding: 50px;
+    width: 70%;
+    
+  }
+  #formulaire {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .footer {
+    display: flex;
+    justify-content: space-around;
+    padding-left:75px;
+    padding-right: 75px;
+  }
+  .footer-items{
+    display: flex;
+    justify-content: space-between;
+    width: 35%;
+  }
+  .disclaimer {
+    text-align: center;
+
+  }
+  .logos {
+  }
+
+  @media screen and (max-width:400px){
+    
+    .box1 {
+      height: 1500px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-around;
+      padding-top: 100px;
+    }
+    .box2{
+      
+        height: 1000px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        padding: 50px;
+      }
+      .desc {
+        border-left: none;
+        border-top: 2px solid black;
+
+      }
+      
+      .footer {
+        border: 1px solid blue;
+      }
+      .footer-items {
+        border: 1px solid red;
+        width: 100%;
+      }
+      
+    }
+  
